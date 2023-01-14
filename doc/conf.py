@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path('__file__').resolve().parents[1]
 sys.path.extend([str(ROOT/'src')])
-import deta-hub
+import deta_hub
 
 if sys.platform == 'win32':
     import asyncio
