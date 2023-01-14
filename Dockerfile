@@ -17,4 +17,4 @@ EXPOSE 8080
 # CMD exec gunicorn --bind :80 --workers 1 --threads 8 --timeout 0 main:app
 #--host=0.0.0.0 --port=1337 --fast --workers=4 access_log=False
 # CMD exec sanic server:app --host=0.0.0.0 --port=8080 --fast
-CMD exec uvicorn main:app --reload --host=0.0.0.0 --port=8080
+CMD exec uvicorn main:app --host=0.0.0.0 --port=8080
