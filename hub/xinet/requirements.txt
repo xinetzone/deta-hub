@@ -1,2 +1,4 @@
 fastapi
-dash
+plotly
+uvicorn
+jupyter-dash

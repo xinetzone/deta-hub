@@ -2,4 +2,5 @@
 
 ```{toctree}
 fastapi/index
+dash/index
 ```

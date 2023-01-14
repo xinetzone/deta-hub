@@ -1,15 +1,31 @@
 from fastapi import FastAPI, Request
-
+from fastapi.middleware.wsgi import WSGIMiddleware
+from dashapp import create_dash_app
 
 app = FastAPI()
 
-@app.get("/")
-async def root():    
-    return {"message": "Hello World"}
 
-# a POST route for our webhook events
-@app.post("/")
-def webhook_handler(req: Request):
-    # verify signature if needed
-    # add logic to handle the request
-    return "ok"
+@app.get("/")
+def read_main():
+    return {
+        "routes": [
+            {"method": "GET", "path": "/", "summary": "Landing"},
+            {"method": "GET", "path": "/status", "summary": "App status"},
+            {"method": "GET", "path": "/dash",
+                "summary": "Sub-mounted Dash application"},
+        ]
+    }
+
+
+@app.get("/status")
+def get_status():
+    return {"status": "ok"}
+
+
+dash_app = create_dash_app(requests_pathname_prefix="/dash/")
+app.mount("/dash", WSGIMiddleware(dash_app.server))
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, port=8001)

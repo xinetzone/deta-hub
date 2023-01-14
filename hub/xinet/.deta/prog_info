@@ -1,1 +1,1 @@
-{"id":"0990883a-be55-43fb-92a0-b366a92013fb","space":43252,"runtime":"python3.9","name":"xinet","path":"xinet","project":"c081pv4c","account":"144798365827","region":"ap-southeast-1","deps":["fastapi","dash"],"envs":null,"public":true,"log_level":"debug","cron":""}
+{"id":"0990883a-be55-43fb-92a0-b366a92013fb","space":43252,"runtime":"python3.9","name":"xinet","path":"xinet","project":"c081pv4c","account":"144798365827","region":"ap-southeast-1","deps":["fastapi","plotly"],"envs":null,"public":true,"log_level":"debug","cron":""}
