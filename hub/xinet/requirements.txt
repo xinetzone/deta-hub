@@ -2,3 +2,5 @@ fastapi
 plotly
 uvicorn
 jupyter-dash
+gunicorn
+pandas
