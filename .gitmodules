@@ -1,0 +1,6 @@
+[submodule "doc/_static/xin-css"]
+	path = doc/_static/xin-css
+	url = https://github.com/xinetzone/xin-css.git
+[submodule "doc/_static/w3css"]
+	path = doc/_static/w3css
+	url = https://github.com/xinetzone/w3css.git

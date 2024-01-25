@@ -173,7 +173,7 @@ html_theme_options = {
     "primary_sidebar_end": "sidebar-ethical-ads.html",
     "secondary_sidebar_items": ["page-toc.html", "edit-this-page.html"],
     # "page_sidebar_items": [], # 删除右侧边栏
-    "footer_items": ["copyright", "sphinx-version", "last-updated", ],
+    "footer_end": ["copyright", "sphinx-version", "last-updated", ],
     # "use_download_button": True,
     # "toc_title": "导航",
     # "single_page": True,
@@ -217,3 +217,5 @@ comments_config = {
         "optional": "config",
     }
 }
+
+html_baseurl = "https://deta-hub.readthedocs.io/zh-cn/latest/"
