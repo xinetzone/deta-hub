@@ -80,6 +80,8 @@ html_theme = 'xyzstyle'
 html_static_path = ['_static']
 html_css_files = [
     'custom.css',
+    'w3css/4/w3.css',
+    'xin-css/main.css'
 ]
 
 # MyST-NB 设置
@@ -139,7 +141,8 @@ extlinks = {
 intersphinx_mapping = {
     'python': ('https://daobook.github.io/cpython/', None),
     'tvm': ('https://daobook.github.io/tvm/', None),
-    "mxnet": ("https://mxnet.incubator.apache.org/versions/1.9.0/api/python/docs", None)
+    # "mxnet": ("https://mxnet.incubator.apache.org/versions/1.9.0/api/python/docs", None)
+    'wiki': ("https://xinetzone.github.io/wiki/", None),
 }
 
 # ``pydata-sphinx-theme`` 配置

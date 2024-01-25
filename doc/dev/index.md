@@ -1,8 +1,7 @@
-# 教程
+# 开发
 
 ```{toctree}
 :maxdepth: 2
 
 fastapi/index
-dash/index
 ```
