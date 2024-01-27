@@ -1,2 +1,5 @@
-fastapi 
-uvicorn
+fastapi
+dash
+# dash-vtk
+# uvicorn
+gunicorn
