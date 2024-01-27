@@ -1,6 +1,0 @@
-# VTK
-
-```{toctree}
-intro
-geometry
-```

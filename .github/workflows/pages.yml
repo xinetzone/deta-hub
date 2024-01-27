@@ -44,7 +44,6 @@ jobs:
         run: |
           sudo apt-get install graphviz
           conda install -c conda-forge pandoc
-          conda install -c conda-forge pyvista
           pip install .[doc]
           invoke doc
       - name: Setup Pages

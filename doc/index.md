@@ -4,8 +4,6 @@
 ```{toctree}
 :maxdepth: 2
 
-dash/index
-dev/index
 deta/index
 about/index
 ```

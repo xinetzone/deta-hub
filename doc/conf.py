@@ -12,7 +12,7 @@
 import sys
 from pathlib import Path
 
-ROOT = Path('__file__').resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[1]
 sys.path.extend([str(ROOT/'src')])
 import deta_hub
 
@@ -78,7 +78,6 @@ html_theme = 'xyzstyle'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static',]
-html_js_files = ["https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"]
 html_css_files = [
     'custom.css',
     'w3css/4/w3.css',
