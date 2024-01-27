@@ -1,0 +1,5 @@
+# Deta
+
+```{toctree}
+intro
+```
