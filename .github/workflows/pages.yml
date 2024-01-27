@@ -43,8 +43,9 @@ jobs:
       - name: 🔧 Build HTML
         run: |
           sudo apt-get install graphviz
-          pip install .[doc]
           conda install -c conda-forge pandoc
+          conda install -c conda-forge pyvista
+          pip install .[doc]
           invoke doc
       - name: Setup Pages
         uses: actions/configure-pages@main

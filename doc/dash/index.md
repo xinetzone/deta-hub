@@ -2,5 +2,6 @@
 
 ```{toctree}
 intro
+vtk/index
 ```
 

@@ -16,7 +16,8 @@ dependencies = [
   "importlib-metadata>=4.12",
   "fastapi",
   "plotly",
-  "jupyter-dash"
+  "dash",
+  "dash-vtk"
 ]
 
 maintainers = [

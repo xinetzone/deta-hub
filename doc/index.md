@@ -6,6 +6,7 @@
 
 dash/index
 dev/index
+deta/index
 about/index
 ```
 

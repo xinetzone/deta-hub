@@ -77,7 +77,8 @@ html_theme = 'xyzstyle'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ['_static',]
+html_js_files = ["https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"]
 html_css_files = [
     'custom.css',
     'w3css/4/w3.css',
@@ -94,6 +95,7 @@ nb_execution_mode = 'off'
 nb_mime_priority_overrides = [
     ('html', 'text/plain', 0),  # 最高级别
     ('latex', 'image/jpeg', None),  # 禁用
+    ('html', 'application/vnd.jupyter.widget-view+json', 0)
     # ('*', 'customtype', 20)
 ]
 
